@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [BDTSuite]">
+  <test name="MY Test">
+    <packages>
+      <package name="Sample.tests"/>
+    </packages>
+    <classes>
+      <class name="Sample.tests.test1"/>
+    </classes>
+  </test> <!-- MY Test -->
+  <test name="MY Test(failed)">
+    <classes>
+      <class name="Sample.tests.test1">
+        <methods>
+          <include name="test11"/>
+        </methods>
+      </class> <!-- Sample.tests.test1 -->
+    </classes>
+  </test> <!-- MY Test(failed) -->
+</suite> <!-- Failed suite [BDTSuite] -->
