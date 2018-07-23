@@ -128,17 +128,9 @@
                   <a name="test11">
                   </a> <!-- test11 -->
                   <span class="method-name">test11</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:125)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:43)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:166)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:168)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
-	at Sample.tests.test1.test11(test1.java:15)
-... Removed 27 stack frames
+                  <div class="stack-trace">java.lang.AssertionError: Test passed expected [true] but found [false]
+	at Sample.tests.test1.test11(test1.java:20)
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -215,12 +207,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test11')
 data.setCell(0, 2, 'Sample.tests.test1')
-data.setCell(0, 3, 158);
+data.setCell(0, 3, 4001);
 window.suiteTableData['BDTSuite']= { tableData: data, tableDiv: 'times-div-BDTSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 158 ms</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-BDTSuite">
               </div> <!-- times-div-BDTSuite -->
             </div> <!-- times-div -->
