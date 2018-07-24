@@ -8,16 +8,21 @@ import org.testng.annotations.Test;
 
 
 public class test1 {
-
+	WebDriver driver;
 	@Test
-	public void test11()
+	public void test1()
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Drivers\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		 driver = new ChromeDriver();
 		driver.get("https://www.google.com");
 		Assert.assertTrue(true, "Test passed");
 		//Master changes 
 		
+	}
+	@Test
+	public void test2()
+	{
+		System.out.println(driver.getTitle());
 	}
 	
 }
