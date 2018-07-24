@@ -16,6 +16,7 @@ public class test1 {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com");
 		Assert.assertTrue(true, "Test passed");
+		//Master changes 
 		
 	}
 	
